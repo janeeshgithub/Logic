@@ -14,5 +14,4 @@ def subarray_sum_with_hashmap(nums, target):
 nums = [1, 2, 3, -2,-5,0,3,0]
 target = 6
 p=subarray_sum_with_hashmap(nums, target)
-print()
-print(p)# Output: Number of subarrays with sum = target
+print(type(subarray_sum_with_hashmap))
