@@ -11,3 +11,4 @@ for _ in range(x):
             count = 1
     next_term += str(count) + t[-1]
     t = next_term
+print(t)

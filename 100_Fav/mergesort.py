@@ -7,7 +7,6 @@ def merge_sort(arr):
     left_sorted = merge_sort(left_half)
     right_sorted = merge_sort(right_half)
 
-    # Merge the sorted halves
     return merge(left_sorted, right_sorted)
 
 

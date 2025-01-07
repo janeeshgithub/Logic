@@ -28,3 +28,5 @@ def maxCoins(nums):
 nums = [3, 1, 5, 8]
 result = maxCoins(nums)
 print(f"Maximum Coins: {result}")
+
+
