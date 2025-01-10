@@ -1,0 +1,55 @@
+"""
+slack
+linkedin
+airbnb
+atlassian
+google
+meta
+netflix
+intuit
+robolox
+riotgames
+zomato
+blinkit
+mynthra
+freshworks
+truvo
+meesho
+juspay
+sprintler
+hotstar
+inmobi
+harness
+appdynmics
+newtanics
+browserstack
+salesforce
+makemytrip
+reubrik
+obseveai
+paytm
+bharatx
+stripe
+slice
+rupeek
+phonepay
+paypal
+mastercard
+visa
+Wells Fargo
+Morgan Stanley
+Goldman SAchs
+JPMC
+De shaw
+Wayfair
+Uber
+gojek
+Rapido
+zepto
+Coinbase
+CoinDCX
+Unocoin
+Bitbns
+CRED
+Target
+"""
