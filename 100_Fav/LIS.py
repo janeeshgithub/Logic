@@ -32,3 +32,14 @@ if __name__ == "__main__":
 
     result = longest_increasing_subsequence_length(arr)
     print("The length of the longest increasing subsequence is", result)
+
+import bisect
+x = [1, 2, 3, 4, 8, 6, 3, 4, 5, 9, 7, 8, 9]
+tail = []
+for num in x:
+    pos = bisect.bisect_left(tail, num)
+    if pos == len(tail):
+        tail.append(num)
+    else:
+        tail[pos] = num
+print("Length of Longest Increasing Subsequence:", len(tail))

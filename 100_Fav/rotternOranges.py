@@ -43,3 +43,36 @@ while queue:
 
 # Output the result
 print(days if healthy_cells == 0 else -1)
+
+from collections import deque
+
+
+class Solution(object):
+    def orangesRotting(self, m):
+        r = len(m)
+        c = len(m[0])
+        dirs = [(1, 0), (-1, 0), (0, -1), (0, 1)]
+        f = 0
+        q = deque()
+        for i in range(r):
+            for j in range(c):
+                if m[i][j] == 2:
+                    q.append((i, j))
+                elif m[i][j] == 1:
+                    f += 1
+        t = 0
+        while q and f > 0:
+            t += 1
+            for _ in range(len(q)):
+                x, y = q.popleft()
+                for di, dj in dirs:
+                    nx = x + di
+                    ny = y + dj
+                    if 0 <= nx < r and 0 <= ny < c and m[nx][ny] == 1:
+                        m[nx][ny] = 2
+                        q.append((nx, ny))
+                        f -= 1
+        return t if f == 0 else -1
+
+
+
