@@ -1,25 +1,26 @@
 nums = [1, 2, 3, 4, 5, 6, 3, 2]
 k = 15
-p = {0: -1}  # Initialize with 0 sum at index -1
-cs = 0
-t = 0
-ml = 0  # Maximum length initialized to 0
+cumulative_sum = 0
+subarray_count = 0
+max_length = 0
+prefix_sum_indices = {0: -1}  # Maps cumulative sum to its earliest index
 subarrays = []  # List to store subarrays whose sum equals k
 
-for i in range(len(nums)):
-    cs += nums[i]
+for index, num in enumerate(nums):
+    cumulative_sum += num
 
-    if cs - k in p:
-        t += 1  # Count the subarray
-        subarrays.append(nums[p[cs - k] + 1:i + 1])  # Extract the subarray
+    # Check if a subarray with sum k exists
+    if cumulative_sum - k in prefix_sum_indices:
+        start_index = prefix_sum_indices[cumulative_sum - k] + 1
+        subarrays.append(nums[start_index:index + 1])  # Store the subarray
+        subarray_count += 1  # Increment subarray count
+        max_length = max(max_length, index - prefix_sum_indices[cumulative_sum - k])  # Update max length
 
-        # Calculate the length of the subarray
-        ml = max(ml, i - p[cs - k])
-
-    # Update the cumulative sum with its corresponding index
-    p[cs] = p.get(cs, i)
+    # Update the prefix sum map with the current cumulative sum
+    if cumulative_sum not in prefix_sum_indices:
+        prefix_sum_indices[cumulative_sum] = index
 
 # Print the results
-print("Number of subarrays whose sum equals k:", t)
-print("Maximum length of subarray:", ml)
+print("Number of subarrays whose sum equals k:", subarray_count)
+print("Maximum length of subarray:", max_length)
 print("Subarrays with sum equal to", k, ":", subarrays)
