@@ -43,3 +43,39 @@ for num in x:
     else:
         tail[pos] = num
 print("Length of Longest Increasing Subsequence:", len(tail))
+
+
+class Solution:
+    def longestIncreasingSubsequence(self, N, arr):
+        import bisect  # Import bisect for binary search operations
+
+        prev_index = {}  # Dictionary to store the previous index for each element in the subsequence
+        dp = []  # List to store pairs of (negative value, index) for the subsequence
+
+        # Iterate over the array in reverse order
+        for i in range(N - 1, -1, -1):
+            value = -arr[i]  # Negate the value to work with decreasing order
+            pos = bisect.bisect_left([x[0] for x in dp], value)  # Find position for the current value in dp
+            previous = -1  # Initialize the previous index as -1 (no valid previous index)
+
+            if pos == len(dp):  # If the value is greater than all elements in dp
+                if dp:  # Check if dp is not empty
+                    previous = dp[-1][1]  # Set previous to the index of the last element in dp
+                dp.append((value, i))  # Append the current value and index to dp
+            else:  # If the value replaces an element in dp
+                if pos > 0:  # Check if there is a valid element before the current position
+                    previous = dp[pos - 1][1]  # Set previous to the index of the element before the current position
+                dp[pos] = (value, i)  # Replace the element at position pos with the current value and index
+
+            prev_index[i] = previous  # Store the previous index for the current element
+
+        result = []  # List to store the final longest increasing subsequence
+        current = dp[-1][1]  # Start from the index of the last element in dp
+
+        # Reconstruct the subsequence by following the previous indices
+        while current >= 0:
+            result.append(arr[current])  # Append the current element to the result
+            current = prev_index[current]  # Move to the previous index
+
+        return result  # Return the longest increasing subsequence
+

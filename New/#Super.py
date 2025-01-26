@@ -2,7 +2,7 @@
 names = [i for i in range(10)]
 
 for i in names:
-    file_name = (f"Z{i}.py")
+    file_name = (f"Zm{i}.py")
     with open(file_name, "w") as file:
         pass
 print("Created Master Janeesh")
