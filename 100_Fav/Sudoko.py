@@ -29,3 +29,4 @@ g = [["0"] * 9 for _ in range(9)]
 a, b = sudoku(g)
 for i in b:
     print(i)  # Prints the solved grid
+
