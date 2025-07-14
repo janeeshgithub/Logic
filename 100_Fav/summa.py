@@ -52,7 +52,7 @@ ml=0
 for i,j in enumerate(s):
     if j in seen and seen[j]>=l:
         l=seen[j]+1
-    seen[j]=r
+    seen[j]
 
 
 
