@@ -8,7 +8,6 @@ class Solution:
         def dfs(n, W):
             if W == 0 or n == 0: return 0
             if dp[n][W] != -1: return dp[n][W]
-            
             if wt[n-1] <= W:
                 dp[n][W] = max(dfs(n-1, W), val[n-1] + dfs(n-1, W-wt[n-1]))
             else:

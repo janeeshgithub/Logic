@@ -1,7 +1,7 @@
 print(all([0,1,2,3,4,5]))
 print(any([0,1,2,3,4,5]))
 print(ascii("a"))
-print(bool()) #0 [] "0" ""
+print(bool())
 print(callable(int))
 print(callable(100))
 print(complex(90))

@@ -5,5 +5,6 @@ def fibonacci(n):
         return n
     return fibonacci(n - 1) + fibonacci(n - 2)
 
-print(fibonacci(550))  # Output: 12586269025
+for i in range(10):
+    print(fibonacci(i))
 print(fibonacci.cache_info())

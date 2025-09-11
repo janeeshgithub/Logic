@@ -6,7 +6,7 @@ class Jan:
         self.A=A
         self.B=B
     def printname(self):
-        print(self.A,"->",self.B)
+        print(self.A,"-->",self.B)
 
 f=Jan(10,2)
 f.printname()
