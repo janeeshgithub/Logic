@@ -1,4 +1,3 @@
-
 # 60 MAANG DSA Questions
 
 ---
@@ -184,3 +183,754 @@ You are given an array of `coins` of different denominations and an `amount`. Re
 Given an integer array `nums`, return `true` if you can partition the array into two subsets such that the sum of the elements in both subsets is equal, or `false` otherwise.
 
 ---
+
+<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
+
+# i want in copiable readme for github
+
+Below is a ready-to-copy **README.md** section. This format is fully compatible with GitHub markdown: just select all, copy, and paste into your repo’s `README.md`. Section links, lists, and headings render natively, and you get automatic code copy buttons for code blocks on GitHub (no extra work needed).[^2][^3][^6]
+
+---
+
+# 20 Essential Coding Patterns for Technical Interviews
+
+Master these **coding patterns** to efficiently solve and recognize major problem types in MAANG and top tech company interviews.
+
+---
+
+## Patterns Overview
+
+### 1. Sliding Window
+
+Efficiently handle subarrays/substrings of fixed or varying length.
+
+- **Data Structures:** Array, String, HashTable
+- **Sample Problems:**
+  - Longest Substring with 'K' Distinct Characters
+  - Fruits into Baskets
+
+### 2. Islands (Matrix Traversal)
+
+Efficiently explore and count components in 2D matrices.
+
+- **Data Structures:** Matrix, Queue
+- **Sample Problems:**
+  - Number of Islands
+  - Flood Fill
+  - Cycle in a Matrix
+
+### 3. Two Pointers
+
+Coordinate two iterators, often in different directions or rates.
+
+- **Data Structures:** Array, String, LinkedList
+- **Sample Problems:**
+  - Squaring a Sorted Array
+  - Dutch National Flag Problem
+  - Minimum Window Sort
+
+### 4. Fast \& Slow Pointers
+
+Detect cycles or midpoints with two pointers at different speeds.
+
+- **Data Structures:** Array, String, LinkedList
+- **Sample Problems:**
+  - Middle of the LinkedList
+  - Happy Number
+  - Cycle in a Circular Array
+
+### 5. Merge Intervals
+
+Process and merge overlapping intervals or ranges efficiently.
+
+- **Data Structures:** Array, Heap
+- **Sample Problems:**
+  - Conflicting Appointments
+  - Minimum Meeting Rooms
+
+### 6. Cyclic Sort
+
+Sort arrays with known, consecutive ranges using index swapping.
+
+- **Data Structures:** Array
+- **Sample Problems:**
+  - Find all Missing Numbers
+  - Find all Duplicate Numbers
+  - Find the First K Missing Positive Numbers
+
+### 7. In-place Reversal of a LinkedList
+
+Reverse links between nodes in-place, minimal memory.
+
+- **Data Structures:** LinkedList
+- **Sample Problems:**
+  - Reverse every K-element Sub-list
+  - Rotate a LinkedList
+
+### 8. Breadth-First Search (BFS)
+
+Traverse trees/graphs level by level.
+
+- **Data Structures:** Tree, Graph, Matrix, Queue
+- **Sample Problems:**
+  - Binary Tree Level Order Traversal
+  - Minimum Depth of a Binary Tree
+  - Connect Level Order Siblings
+
+### 9. Depth First Search (DFS)
+
+Explore recursive/branching paths fully before backtracking.
+
+- **Data Structures:** Tree, Graph, Matrix
+- **Sample Problems:**
+  - Path With Given Sequence
+  - Count Paths for a Sum
+
+### 10. Two Heaps
+
+Split sets for median/tracking min/max with two heaps.
+
+- **Data Structures:** Heap, Array
+- **Sample Problems:**
+  - Find the Median of a Number Stream
+  - Next Interval
+
+### 11. Subsets
+
+Generate and manage subsets, permutations, and combinations.
+
+- **Data Structures:** Queue, Array, String
+- **Sample Problems:**
+  - String Permutations by Changing Case
+  - Unique Generalized Abbreviations
+
+### 12. Modified Binary Search
+
+Adapt binary search for not-fully-sorted or rotated data.
+
+- **Data Structures:** Array
+- **Sample Problems:**
+  - Ceiling of a Number
+  - Bitonic Array Maximum
+
+### 13. Bitwise XOR
+
+Use XOR operations for bitwise manipulation and property finding.
+
+- **Data Structures:** Array, Bits
+- **Sample Problems:**
+  - Two Single Numbers
+  - Flip and Invert an Image
+
+### 14. Top 'K' Elements
+
+Maintain top/frequent K items with heaps or other structures.
+
+- **Data Structures:** Array, Heap, Queue
+- **Sample Problems:**
+  - K Closest Points to the Origin
+  - Maximum Distinct Elements
+
+### 15. K-way Merge
+
+Merge and find elements across multiple sorted arrays.
+
+- **Data Structures:** Array, Queue, Heap
+- **Sample Problems:**
+  - Kth Smallest Number in M Sorted Lists
+  - Kth Smallest Number in a Sorted Matrix
+
+### 16. Topological Sort
+
+Linear ordering of elements with dependencies (DAGs).
+
+- **Data Structures:** Array, HashTable, Queue, Graph
+- **Sample Problems:**
+  - Tasks Scheduling
+  - Alien Dictionary
+
+### 17. 0/1 Knapsack (DP)
+
+Maximize value within constraints, each item used at most once.
+
+- **Data Structures:** Array, HashTable
+- **Sample Problems:**
+  - Equal Subset Sum Partition
+  - Minimum Subset Sum Difference
+
+### 18. Fibonacci Numbers (DP)
+
+Build solutions where each result uses earlier results (recursion+memoization).
+
+- **Data Structures:** Array, HashTable
+- **Sample Problems:**
+  - Staircase
+  - House Thief
+
+### 19. Palindromic Subsequence (DP)
+
+Find or build palindromic sequences/subsequences.
+
+- **Data Structures:** Array, HashTable
+- **Sample Problems:**
+  - Longest Palindromic Subsequence
+  - Minimum Deletions in a String to Make it a Palindrome
+
+### 20. Longest Common Substring (DP)
+
+Solve substring, subsequence, and sequence alignment problems.
+
+- **Data Structures:** Array, HashTable
+- **Sample Problems:**
+  - Maximum Sum Increasing Subsequence
+  - Edit Distance
+
+---
+
+**Tip:**
+Practice each pattern with classic problems to sharpen recognition and application in real interviews.
+
+---
+
+_Credit: Patterns curated from DesignGurus and leading interview resources._
+
+<span style="display:none">[^1][^4][^5][^7][^8]</span>
+
+<div style="text-align: center">⁂</div>
+
+[^1]: https://stackoverflow.com/questions/31908564/easy-way-to-add-copy-to-clipboard-to-github-markdown
+[^2]: https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+[^3]: https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet
+[^4]: https://community.atlassian.com/forums/Bitbucket-questions/How-to-copy-paste-and-preserve-the-format-from-README-md-to-the/qaq-p/1635156
+[^5]: https://forum.gitea.com/t/copy-button-on-code-blocks-in-readme-md/6893
+[^6]: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github
+[^7]: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes
+[^8]: https://euangoddard.github.io/clipboard2markdown/
+
+<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
+
+# convert to readme
+
+Here is a clean, copy-paste-ready README.md format for GitHub, listing all 50 essential SQL interview queries. Command descriptions and SQL code blocks are included for easy reading and copy-ability.
+
+---
+
+# 50 SQL Interview Queries
+
+A curated list of 50 real-world SQL interview queries asked at companies like Amazon, Microsoft, Google, Meta, Uber, Adobe, Walmart, and PayPal.
+
+---
+
+## Table of Contents
+
+- [Duplicates and Ranking](#duplicates-and-ranking)
+- [Joins \& Nulls](#joins--nulls)
+- [Aggregations](#aggregations)
+- [Date / Time \& Windows](#date--time--windows)
+- [Advanced Analytics](#advanced-analytics)
+
+---
+
+## Duplicates and Ranking
+
+**1. Find duplicate records in a table (Amazon)**
+
+```sql
+SELECT column1, column2, COUNT(*)
+FROM your_table
+GROUP BY column1, column2
+HAVING COUNT(*) > 1;
+```
+
+**2. Retrieve the second highest salary from Employee table (Microsoft)**
+
+```sql
+SELECT MAX(salary) AS SecondHighestSalary
+FROM Employee
+WHERE salary < (SELECT MAX(salary) FROM Employee);
+```
+
+## Joins \& Nulls
+
+**3. Find employees without a department (Uber)**
+
+```sql
+SELECT e.*
+FROM Employee e
+LEFT JOIN Department d ON e.department_id = d.department_id
+WHERE d.department_id IS NULL;
+```
+
+**11. Find products that were never sold (Adobe)**
+
+```sql
+SELECT p.product_id
+FROM Products p
+LEFT JOIN Sales s ON p.product_id = s.product_id
+WHERE s.product_id IS NULL;
+```
+
+## Aggregations
+
+**4. Calculate total revenue per product**
+
+```sql
+SELECT product_id, SUM(quantity * price) AS total_revenue
+FROM Sales
+GROUP BY product_id;
+```
+
+**7. Show the count of orders per customer (Meta)**
+
+```sql
+SELECT customer_id, COUNT(*) AS order_count
+FROM Orders
+GROUP BY customer_id;
+```
+
+**9. Calculate the average order value per customer (Microsoft)**
+
+```sql
+SELECT customer_id, AVG(total_amount) AS avg_order_value
+FROM Orders
+GROUP BY customer_id;
+```
+
+**10. Get the latest order placed by each customer (Uber)**
+
+```sql
+SELECT customer_id, MAX(order_date) AS latest_order_date
+FROM Orders
+GROUP BY customer_id;
+```
+
+**13. Get the total revenue and order count per region**
+
+```sql
+SELECT region, SUM(total_amount) AS total_revenue, COUNT(*) AS order_count
+FROM Orders
+GROUP BY region;
+```
+
+**14. Count customers who placed more than 5 orders (Meta)**
+
+```sql
+SELECT COUNT(*) AS customer_count
+FROM (
+  SELECT customer_id FROM Orders
+  GROUP BY customer_id
+  HAVING COUNT(*) > 5
+) AS subquery;
+```
+
+**18. Get monthly sales revenue and order count (Google)**
+
+```sql
+SELECT FORMAT(date, 'yyyy-MM') AS month,
+       SUM(amount) AS total_revenue,
+       COUNT(order_id) AS order_count
+FROM Orders
+GROUP BY FORMAT(date, 'yyyy-MM');
+```
+
+**19. Rank employees by salary within each department (Amazon)**
+
+```sql
+SELECT employee_id, department_id, salary,
+       RANK() OVER (PARTITION BY department_id ORDER BY salary DESC) AS salary_rk
+FROM Employee;
+```
+
+## Date / Time \& Windows
+
+**8. Retrieve all employees who joined in 2023 (Amazon)**
+
+```sql
+SELECT *
+FROM Employee
+WHERE YEAR(hire_date) = 2023;
+```
+
+**16. Find all employees hired on weekends (PayPal)**
+
+```sql
+SELECT *
+FROM Employee
+WHERE DATENAME(WEEKDAY, hire_date) IN ('Saturday', 'Sunday');
+```
+
+**17. Employees with salary between 50,000 and 100,000 (Microsoft)**
+
+```sql
+SELECT *
+FROM Employee
+WHERE salary BETWEEN 50000 AND 100000;
+```
+
+**21. Find moving average of sales over last 3 days**
+
+```sql
+SELECT order_date,
+       AVG(total_amount) OVER (ORDER BY order_date ROWS BETWEEN 2 PRECEDING AND CURRENT ROW) AS moving_avg
+FROM Orders;
+```
+
+**22. First and last order date for each customer**
+
+```sql
+SELECT customer_id, MIN(order_date) AS first_order, MAX(order_date) AS last_order
+FROM Orders
+GROUP BY customer_id;
+```
+
+**26. Calculate cumulative revenue by day**
+
+```sql
+SELECT order_date,
+       SUM(total_amount) OVER (ORDER BY order_date) AS cumulative_revenue
+FROM Orders;
+```
+
+**27. Top-performing departments by average salary**
+
+```sql
+SELECT department_id, AVG(salary) AS avg_salary
+FROM Employee
+GROUP BY department_id
+ORDER BY avg_salary DESC;
+```
+
+## Advanced Analytics
+
+**23. Show product sales distribution (percent of total revenue)**
+
+```sql
+WITH TotalRevenue AS (
+  SELECT SUM(quantity * price) AS total FROM Sales)
+SELECT s.product_id,
+       SUM(s.quantity * s.price) AS revenue,
+       SUM(s.quantity * s.price) * 100.0 / t.total AS revenue_pct
+FROM Sales s
+CROSS JOIN TotalRevenue t
+GROUP BY s.product_id, t.total;
+```
+
+**24. Customers making consecutive purchases (2 days)**
+
+```sql
+WITH cte AS (
+  SELECT id, order_date,
+         LAG(order_date) OVER (PARTITION BY id ORDER BY order_date) AS prev_order_date
+  FROM Orders
+)
+SELECT id, order_date, prev_order_date
+FROM cte
+WHERE DATEDIFF(DAY, prev_order_date, order_date) = 1;
+```
+
+**25. Find churned customers (no orders in the last 6 months)**
+
+```sql
+SELECT customer_id
+FROM Orders
+GROUP BY customer_id
+HAVING MAX(order_date) < DATEADD(MONTH, -6, GETDATE());
+```
+
+**28. Customers with orders above average per customer**
+
+```sql
+WITH customer_orders AS (
+  SELECT customer_id, COUNT(*) AS order_count FROM Orders GROUP BY customer_id
+)
+SELECT * FROM customer_orders
+WHERE order_count > (SELECT AVG(order_count) FROM customer_orders);
+```
+
+**29. Revenue from new (first-time) customers**
+
+```sql
+WITH first_orders AS (
+  SELECT customer_id, MIN(order_date) AS first_order_date
+  FROM Orders GROUP BY customer_id
+)
+SELECT SUM(o.total_amount) AS new_revenue
+FROM Orders o JOIN first_orders f ON o.customer_id = f.customer_id
+WHERE o.order_date = f.first_order_date;
+```
+
+**30. Percentage of employees in each department**
+
+```sql
+SELECT department_id,
+       COUNT(*) AS emp_count,
+       COUNT(*) * 100.0 / (SELECT COUNT(*) FROM Employee) AS pct
+FROM Employee
+GROUP BY department_id;
+```
+
+**31. Maximum salary gap within each department**
+
+```sql
+SELECT department_id, MAX(salary) - MIN(salary) AS salary_diff
+FROM Employee
+GROUP BY department_id;
+```
+
+**32. Products contributing to 80% of revenue (Pareto)**
+
+```sql
+WITH sales_cte AS (
+  SELECT product_id, SUM(qty * price) AS revenue FROM Sales GROUP BY product_id
+), total_revenue AS (
+  SELECT SUM(revenue) AS total FROM sales_cte
+)
+SELECT s.product_id, s.revenue,
+       SUM(s.revenue) OVER (ORDER BY s.revenue DESC ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS running_total
+FROM sales_cte s, total_revenue t
+WHERE SUM(s.revenue) OVER (ORDER BY s.revenue DESC ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) <= t.total * 0.8;
+```
+
+**33. Average time between customer purchases**
+
+```sql
+WITH cte AS (
+  SELECT customer_id, order_date,
+         LAG(order_date) OVER (PARTITION BY customer_id ORDER BY order_date) AS prev_date
+  FROM Orders
+)
+SELECT customer_id,
+       AVG(DATEDIFF(DAY, prev_date, order_date)) AS avg_gap_days
+FROM cte
+WHERE prev_date IS NOT NULL
+GROUP BY customer_id;
+```
+
+**34. Last purchase for each customer and amount**
+
+```sql
+WITH ranked_orders AS (
+  SELECT customer_id, order_id, total_amount,
+         ROW_NUMBER() OVER (PARTITION BY customer_id ORDER BY order_date DESC) AS rn
+  FROM Orders
+)
+SELECT customer_id, order_id, total_amount
+FROM ranked_orders
+WHERE rn = 1;
+```
+
+**35. Year-over-year growth in revenue (Microsoft)**
+
+```sql
+SELECT FORMAT(order_date, 'yyyy') AS year,
+       SUM(total_amount) AS revenue,
+       SUM(total_amount) - LAG(SUM(total_amount)) OVER (ORDER BY FORMAT(order_date, 'yyyy')) AS yoy_growth
+FROM Orders
+GROUP BY FORMAT(order_date, 'yyyy');
+```
+
+**36. Purchases above customer 90th percentile**
+
+```sql
+WITH ranked_orders AS (
+  SELECT customer_id, order_id, total_amount,
+         NTILE(10) OVER (PARTITION BY customer_id ORDER BY total_amount) AS decile
+  FROM Orders
+)
+SELECT customer_id, order_id, total_amount
+FROM ranked_orders
+WHERE decile = 10;
+```
+
+**37. Longest gap between orders for each customer**
+
+```sql
+WITH cte AS (
+  SELECT customer_id, order_date,
+         LAG(order_date) OVER (PARTITION BY customer_id ORDER BY order_date) AS prev_order_date
+  FROM Orders
+)
+SELECT customer_id, MAX(DATEDIFF(DAY, prev_order_date, order_date)) AS max_gap
+FROM cte
+WHERE prev_order_date IS NOT NULL
+GROUP BY customer_id;
+```
+
+**38. Customers with revenue below the 10th percentile (Google)**
+
+```sql
+WITH cte AS (
+  SELECT customer_id, SUM(total_amount) AS total_revenue
+  FROM Orders
+  GROUP BY customer_id
+)
+SELECT customer_id, total_revenue
+FROM cte
+WHERE total_revenue < (
+  SELECT PERCENTILE_CONT(0.1) WITHIN GROUP (ORDER BY total_revenue) FROM cte
+);
+```
+
+**39. Market basket analysis: Products always sold together (Walmart)**
+
+```sql
+SELECT A.product_id AS product_A,
+       B.product_id AS product_B,
+       COUNT(*) AS count_together
+FROM Order_Details A
+JOIN Order_Details B
+  ON A.order_id = B.order_id AND A.product_id < B.product_id
+GROUP BY A.product_id, B.product_id
+HAVING COUNT(*) > 10;
+```
+
+**40. Calculate income inequality (Gini coefficient, Uber)**
+
+```sql
+WITH income_cte AS (
+  SELECT salary,
+         SUM(salary) OVER (ORDER BY salary) AS cum_income,
+         COUNT(*) OVER() AS n,
+         ROW_NUMBER() OVER (ORDER BY salary) AS r
+  FROM Employee
+)
+SELECT 1 - (2 * SUM((cum_income) / (SUM(salary) OVER ()) * (1.0 / n))) AS gini_coefficient
+FROM income_cte;
+```
+
+**41. Median sales day: Revenue first exceeds 50% of total (Adobe)**
+
+```sql
+WITH cte AS (
+  SELECT order_date, SUM(total_amount) AS daily_rev FROM Orders GROUP BY order_date
+), cum_cte AS (
+  SELECT order_date, daily_rev, SUM(daily_rev) OVER (ORDER BY order_date) AS cum_rev, SUM(daily_rev) OVER() AS total_rev FROM cte
+)
+SELECT TOP 1 order_date FROM cum_cte
+WHERE cum_rev >= total_rev / 2
+ORDER BY order_date;
+```
+
+**42. Find percentiles (25th, 50th, 75th) of salaries (Walmart)**
+
+```sql
+SELECT
+  (SELECT PERCENTILE_CONT(0.25) WITHIN GROUP (ORDER BY salary) OVER () FROM Employee) AS p25,
+  (SELECT PERCENTILE_CONT(0.50) WITHIN GROUP (ORDER BY salary) OVER () FROM Employee) AS p50,
+  (SELECT PERCENTILE_CONT(0.75) WITHIN GROUP (ORDER BY salary) OVER () FROM Employee) AS p75;
+```
+
+**43. Customers with increasing order amounts (last 3 orders)**
+
+```sql
+WITH cte AS (
+  SELECT customer_id, order_date, total_amount,
+         LAG(total_amount, 2) OVER (PARTITION BY customer_id ORDER BY order_date) AS amt_t_minus_2,
+         LAG(total_amount, 1) OVER (PARTITION BY customer_id ORDER BY order_date) AS amt_t_minus_1
+  FROM Orders
+)
+SELECT customer_id, order_date, total_amount
+FROM cte
+WHERE amt_t_minus_2 < amt_t_minus_1
+  AND amt_t_minus_1 < total_amount;
+```
+
+**44. Conversion funnel between visit → signup → purchase (Microsoft)**
+
+```sql
+SELECT
+  SUM(CASE WHEN stage = 'visit' THEN 1 ELSE 0 END) AS visits,
+  SUM(CASE WHEN stage = 'sign_up' THEN 1 ELSE 0 END) AS sign_ups,
+  SUM(CASE WHEN stage = 'purchase' THEN 1 ELSE 0 END) AS purchases
+FROM Funnel;
+```
+
+**45. Top 10% of customers: Percentage of total sales (Google)**
+
+```sql
+WITH cte AS (
+  SELECT customer_id, SUM(total_amount) AS revenue
+  FROM Orders GROUP BY customer_id
+), ranked AS (
+  SELECT *, NTILE(10) OVER (ORDER BY revenue DESC) AS decile FROM cte
+)
+SELECT SUM(revenue) * 100.0 / (SELECT SUM(revenue) FROM cte) AS pct_top_10
+FROM ranked
+WHERE decile = 1;
+```
+
+**46. Weekly active users (Uber)**
+
+```sql
+SELECT DATEPART(YEAR, login_date) AS year,
+       DATEPART(WEEK, login_date) AS week,
+       COUNT(DISTINCT user_id) AS wau
+FROM Logins
+GROUP BY DATEPART(YEAR, login_date), DATEPART(WEEK, login_date);
+```
+
+**47. Employees with salary above department average (Amazon)**
+
+```sql
+WITH dept_avg AS (
+  SELECT department_id, AVG(salary) AS avg_salary FROM Employee GROUP BY department_id
+)
+SELECT e.*
+FROM Employee e
+JOIN dept_avg d ON e.department_id = d.department_id
+WHERE e.salary > d.avg_salary;
+```
+
+**48. Time from user signup to first purchase**
+
+```sql
+WITH first_purchase AS (
+  SELECT user_id, MIN(purchase_date) AS first_purchase_date FROM Purchases GROUP BY user_id
+)
+SELECT u.user_id,
+       DATEDIFF(DAY, u.signup_date, f.first_purchase_date) AS days_to_purchase
+FROM Users u
+JOIN first_purchase f ON u.user_id = f.user_id;
+```
+
+**49. Longest gap between orders for each customer**
+
+```sql
+WITH cte AS (
+  SELECT customer_id, order_date,
+         LAG(order_date) OVER (PARTITION BY customer_id ORDER BY order_date) AS prev_order_date
+  FROM Orders
+)
+SELECT customer_id, MAX(DATEDIFF(DAY, prev_order_date, order_date)) AS max_gap
+FROM cte
+WHERE prev_order_date IS NOT NULL
+GROUP BY customer_id;
+```
+
+**50. Customers with revenue below the 10th percentile**
+
+```sql
+WITH cte AS (
+  SELECT customer_id, SUM(total_amount) AS total_revenue
+  FROM Orders
+  GROUP BY customer_id
+)
+SELECT customer_id, total_revenue
+FROM cte
+WHERE total_revenue < (
+  SELECT PERCENTILE_CONT(0.1) WITHIN GROUP (ORDER BY total_revenue) FROM cte
+);
+```
+
+---
+
+> **Need more?**
+> Follow for more resources and queries for interview prep.
+
+---
+
+<span style="display:none">[^1]</span>
+
+<div style="text-align: center">⁂</div>
+
+[^1]: SQL.pdf
