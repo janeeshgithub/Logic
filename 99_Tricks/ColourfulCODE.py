@@ -20,7 +20,7 @@ def print_colored_text():
 
     for color, code in colors.items():
         print(f"{code}{color}\033[0m")
-        print("\033[33mhello\033[0m")
+
 
 
 print_colored_text()
